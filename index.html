@@ -6,10 +6,10 @@
     </head>
     <body>
         <div style="text-align: center; width:75%;">
-                <div style="text-align: center; width:300px;">
+                <div style="text-align: center; width:500px;">
                     <h3 id="response">Hello!</h3>
                     <img src="https://vignette.wikia.nocookie.net/theofficalsovietronalds/images/9/97/9a3a58293fc74ca81bad0b9ce8072c11.png/revision/latest/scale-to-width-down/180?cb=20160912162144">
-                    <input id="search" type="text" style="width: 300px;" placeholder="Search the web!">
+                    <input id="search" type="text" style="width: 500px;" placeholder="Search the web!">
                 </div>
                 <div id="buttons" style="width: 50%;">
                 <button type="button" id = "1" onclick="Joke()">Tell me a joke</button>
@@ -20,6 +20,9 @@
         </div>
         
     </body>
+    <footer>
+        Made (with love!) by <a href="https://saladhax.site">Gortbrown</a> for <a href="http://saladhax.freeshell.org">Saladhax Labs</a>
+    </footer>
     <style>
         div {
             margin: 0 auto;
@@ -48,11 +51,9 @@
             document.getElementById("buttons").innerHTML = '<button type="button" id = "1" onclick="Joke()">Tell me a joke</button>\n <button type="button" id = "2" onclick="Games()">Play a game</button>\n <button type="button" id = "3" onclick="window.open(\'https://youtube.com\')">Watch a video</button>\n <button type="button" id = "4" onclick="Social()">Socialize with Friends</button>';
             document.getElementById("response").innerHTML = "Ok, maybe next time!";
         }
-        /*
-               ______________/| G   R   B   O   N
-             //==============\|   O   T   R   W
-             \\=====================\
-                 |>=================/
-        */
+        function Social(){
+            document.getElementById("buttons").innerHTML = '<button type="button onclick="window.open(\'https://spacehey.com\')">SpaceHey (MySpace clone)</button> \n <button type="button onclick="window.open(\'https://mastodon.social\')">Mastodon (main instance)</button> \n <button type="button onclick="window.open(\'https://twitter.com\')">Twitter</button> \n <button type="button onclick="window.open(\'https://facebook.com\')">Facebook</button> \n <button type="button onclick="window.open(\'https://instagram.com\')">Instagram</button> \n <button type="button" id = "3" onclick="Reverse()">Back</button>';
+            document.getElementById("response").innerHTML = "Lets connect with some friends!"
+        }
     </script>
 </html>
